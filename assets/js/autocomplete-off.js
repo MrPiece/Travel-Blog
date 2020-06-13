@@ -1,0 +1,1 @@
+let i=document.querySelectorAll("input");for(let t of i)t.setAttribute("autocomplete","off");

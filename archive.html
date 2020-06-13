@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ****** faviconit.com favicons ****** -->
+	<link rel="shortcut icon" href="assets/faviconit/favicon.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="assets/faviconit/favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="assets/faviconit/favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="assets/faviconit/favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/faviconit/favicon-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="assets/faviconit/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/faviconit/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/faviconit/favicon-16.png">
+	<link rel="apple-touch-icon" href="assets/faviconit/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/faviconit/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/faviconit/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/faviconit/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/faviconit/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/faviconit/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/faviconit/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/faviconit/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/faviconit/favicon-180.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="assets/faviconit/favicon-144.png">
+	<meta name="msapplication-config" content="assets/faviconit/browserconfig.xml">
+	<!-- ****** faviconit.com favicons ****** -->
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <link rel="stylesheet" href="assets/fontawesome-free-5.13.0-web/css/all.css">
+  <title>Travel Blog - Archive</title>
+</head>
+
+<body>
+  <nav id="slideout-menu">
+    <ul class="links-list">
+      <li class="link-item"><a href="contacts.html" class="link-title">Learn more</a></li>
+      <li class="link-item"><a href="#" class="link">About me</a></li>
+      <li class="link-item"><a href="#" class="link">Privacy policy</a></li>
+      <li class="link-item"><a href="#" class="link">Contact with me</a></li>
+    </ul>
+
+    <hr>
+
+    <ul class="links-list">
+      <li class="link-item"><a href="contacts.html" class="link-title">Blog</a></li>
+      <li class="link-item"><a href="#" class="link">Gear</a></li>
+      <li class="link-item"><a href="#" class="link">Guides</a></li>
+      <li class="link-item"><a href="#" class="link">Videos</a></li>
+      <li class="link-item"><a href="#" class="link">Destinations</a></li>
+    </ul>
+
+    <hr>
+
+    <ul class="social-links">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-pinterest-p"></i></a>
+      <a href="#"><i class="fas fa-envelope"></i></a>
+    </ul>
+  </nav>
+
+  <div id="slideout-panel">
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <h2 class="header__brand">
+            <a href="home.html">Brand Name</a>
+          </h2>
+  
+          <ul class="links-list">
+            <li class="link-item"><a href="#" class="link">Destinations</a></li>
+            <li class="link-item"><a href="#" class="link">Blog</a></li>
+            <li class="link-item"><a href="#" class="link">Categories list</a></li>
+            <li class="link-item"><a href="#" class="link">About me</a></li>
+          </ul>
+  
+          <form class="search header__search" action="#" method="get">
+            <input class="search__input header__search-input" type="search" placeholder="Search...">
+            <button type="submit" class="search__button header__search-button">
+              <i class="fas fa-search search-icon header__search-icon"></i>
+            </button>
+          </form>
+  
+          <i class="fas fa-bars header__menu-icon"></i>
+  
+          <i class="fas fa-search header__search-mobile-icon" id="search-icon"></i>
+          <form class="header__search-mobile" id="mobile-search" action="#" method="get">
+            <input class="header__search-mobile-input" type="search" placeholder="Search...">
+            <button type="submit" class="header__search-mobile-button">
+              <i class="fas fa-search search-icon header__search-icon"></i>
+            </button>
+          </form>
+        </nav>
+      </div>
+    </header>
+  
+    <main>
+  
+      <div class="container">   
+        <section class="blog">
+          <aside class="mobile-dropmenu" id="list" data-height="30">
+            <div class="mobile-dropmenu__options">
+              <span id="list-button-sort">Sort <i class="arrow-down"></i></span>
+              <span id="list-button-filter">Filter <i class="arrow-down"></i></span>
+            </div>
+  
+            <div class="mobile-dropmenu__container" id="list-container-sort">
+              <div class="mobile-dropmenu__sort">
+                <a class="mobile-dropmenu__sort-option" href="#">Newest</a>
+                <a class="mobile-dropmenu__sort-option" href="#">Most relevant</a>
+                <a class="mobile-dropmenu__sort-option" href="#">Top rated</a>
+              </div>
+            </div>
+  
+            <div class="mobile-dropmenu__container" id="list-container-filter">
+              <form action="#" method="get" class="mobile-dropmenu__filter">
+                <div class="accordion" data-height="46">
+                  <div class="accordion__button">
+                    Countries
+                    <i class="arrow-down accordion__arrow"></i>
+                  </div>
+                  <div class="accordion__panel" id="list-container">
+                    <div class="checkbox">
+                      <label for="russia-mobile" class="checkbox-input">
+                        <input type="checkbox" name="russia-mobile" id="russia-mobile">
+                        <span class="fas fa-check tick"></span>
+                      </label>
+                      <label for="russia-mobile">Russia</label>
+                    </div>
+    
+                    <div class="checkbox">
+                      <label for="canada-mobile" class="checkbox-input">
+                        <input type="checkbox" name="canada-mobile" id="canada-mobile">
+                        <span class="fas fa-check tick"></span>
+                      </label>
+                      <label for="canada-mobile">Canada</label>
+                    </div>
+    
+                    <div class="checkbox">
+                      <label for="france-mobile" class="checkbox-input">
+                        <input type="checkbox" name="france-mobile" id="france-mobile">
+                        <span class="fas fa-check tick"></span>
+                      </label>
+                      <label for="france-mobile">France</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion" data-height="46">
+                  <div class="accordion__button">
+                    Categories
+                    <i class="arrow-down accordion__arrow"></i>
+                  </div>
+                  <div class="accordion__panel">
+                    <div class="checkbox">
+                      <label for="sightseeing-mobile" class="checkbox-input">
+                        <input type="checkbox" name="sightseeing-mobile" id="sightseeing-mobile">
+                        <span class="fas fa-check tick"></span>
+                      </label>
+                      <label for="sightseeing-mobile">Sightseeing</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion" data-height="46">
+                  <div class="accordion__button">
+                    Tags
+                    <i class="arrow-down accordion__arrow"></i>
+                  </div>
+                  <div class="accordion__panel">
+                    <div class="checkbox">
+                      <label for="alone-mobile" class="checkbox-input">
+                        <input type="checkbox" name="alone-mobile" id="alone-mobile">
+                        <span class="fas fa-check tick"></span>
+                      </label>
+                      <label for="alone-mobile">Alone</label>
+                    </div>
+                  </div>
+                </div>
+                <button class="button mobile-dropmenu__submit" type="submit">Apply filters</button>
+              </form>
+            </div>
+          </aside>
+  
+          <div class="posts">
+            <article class="card post">
+              <a href="post.html" class="post__img-wrapper">
+                <img src="assets/images/home-post-1.jpg" alt="">
+              </a>
+  
+              <div class="post__content">
+                <a href="post.html" class="post__title">Post title</a>
+  
+                <div class="post__tags">
+                  <a href="#" class="post__tag">Brazil</a>
+                  <a href="#" class="post__tag">Video</a>
+                  <a href="#" class="post__tag">Alone</a>
+                  <a href="#" class="post__tag">Desert</a>
+                </div>
+  
+                <p class="post__excerpt">
+                  Est aute excepteur enim commodo anim sit in pariatur voluptate sunt aliquip Lorem magna est enim veniam mollit enim duis incididunt commodo consectetur sit excepteur... Est aute excepteur enim commodo anim sit in pariatur voluptate sunt aliquip Lorem 
+                </p>
+  
+                <div class="post__stats">
+                  <div class="post__likes-count">
+                    <i class="fas fa-heart"></i>
+                    <span>343</span>
+                  </div>
+  
+                  <div class="post__comments-count">
+                    <i class="fas fa-comment"></i>
+                    <span>137</span>
+                  </div>
+  
+                  <div class="post__views-count">
+                    <i class="fas fa-eye"></i>
+                    <span>10140517</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+  
+            <article class="card post">
+              <a href="#" class="post__img-wrapper">
+                <img src="assets/images/home-post-2.jpg" alt="">
+              </a>
+  
+              <div class="post__content">
+                <a href="#" class="post__title">Post title</a>
+  
+                <div class="post__tags">
+                  <a href="#" class="post__tag">Brazil</a>
+                  <a href="#" class="post__tag">Video</a>
+                  <a href="#" class="post__tag">Alone</a>
+                  <a href="#" class="post__tag">Desert</a>
+                </div>
+  
+                <p class="post__excerpt">
+                  Est aute excepteur enim commodo anim sit in pariatur voluptate sunt aliquip Lorem magna est enim veniam mollit enim duis incididunt commodo consectetur sit excepteur...
+                </p>
+  
+                <div class="post__stats">
+                  <div class="post__likes-count">
+                    <i class="fas fa-heart"></i>
+                    <span>343</span>
+                  </div>
+  
+                  <div class="post__comments-count">
+                    <i class="fas fa-comment"></i>
+                    <span>137</span>
+                  </div>
+  
+                  <div class="post__views-count">
+                    <i class="fas fa-eye"></i>
+                    <span>10517</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card post">
+              <a href="#" class="post__img-wrapper">
+                <img src="assets/images/home-post-3.jpg" alt="">
+              </a>
+  
+              <div class="post__content">
+                <a href="#" class="post__title">Post title</a>
+  
+                <div class="post__tags">
+                  <a href="#" class="post__tag">Brazil</a>
+                  <a href="#" class="post__tag">Video</a>
+                  <a href="#" class="post__tag">Alone</a>
+                  <a href="#" class="post__tag">Desert</a>
+                </div>
+  
+                <p class="post__excerpt">
+                  Est aute excepteur enim commodo anim sit in pariatur voluptate sunt aliquip Lorem magna est enim veniam mollit enim duis incididunt commodo consectetur sit excepteur...
+                </p>
+  
+                <div class="post__stats">
+                  <div class="post__likes-count">
+                    <i class="fas fa-heart"></i>
+                    <span>343</span>
+                  </div>
+  
+                  <div class="post__comments-count">
+                    <i class="fas fa-comment"></i>
+                    <span>137</span>
+                  </div>
+  
+                  <div class="post__views-count">
+                    <i class="fas fa-eye"></i>
+                    <span>10517</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+  
+            <a href="#" class="posts__load-posts">Load more posts</a>
+          </div>
+  
+          <aside class="sidebar">
+            <div class="lift">
+              <form class="sidebar__widget-search search card" action="#" method="get">
+                <input class="search__input" type="search" placeholder="Search...">
+                <button type="submit" class="button search__button">
+                  <i class="fas fa-search search-icon"></i>
+                </button>
+              </form>
+  
+              <form action="#" method="get" class="sidebar__widget-filter card">
+                <h3 class="sidebar__title">Countries</h3>
+  
+                <div class="sidebar__checkboxes-grid">
+                  <div class="checkbox">
+                    <label for="russia" class="checkbox-input">
+                      <input type="checkbox" name="russia" id="russia">
+                      <span class="fas fa-check tick"></span>
+                    </label>
+                    <label for="russia">Russia</label>
+                  </div>
+  
+                  <div class="checkbox">
+                    <label for="new-zeland" class="checkbox-input">
+                      <input type="checkbox" name="new-zeland" id="new-zeland">
+                      <span class="fas fa-check tick"></span>
+                    </label>
+                    <label for="new-zeland">New Zeland</label>
+                  </div>
+  
+                  <div class="checkbox">
+                    <label for="iceland" class="checkbox-input">
+                      <input type="checkbox" name="iceland" id="iceland">
+                      <span class="fas fa-check tick"></span>
+                    </label>
+                    <label for="iceland">Iceland</label>
+                  </div>
+  
+                  <div class="checkbox">
+                    <label for="usa" class="checkbox-input">
+                      <input type="checkbox" name="usa" id="usa">
+                      <span class="fas fa-check tick"></span>
+                    </label>
+                    <label for="usa">USA</label>
+                  </div>
+  
+                  <div class="checkbox">
+                    <label for="paris" class="checkbox-input">
+                      <input type="checkbox" name="paris" id="paris">
+                      <span class="fas fa-check tick"></span>
+                    </label>
+                    <label for="paris">Paris</label>
+                  </div>
+                </div>
+  
+                <hr class="sidebar__hr">
+  
+                <h3 class="sidebar__title">Categories</h3>
+  
+                <div class="sidebar__checkboxes-grid">
+                  <div class="checkbox">
+                    <label for="alone" class="checkbox-input">
+                      <input type="checkbox" name="alone" id="alone">
+                      <span class="fas fa-check tick"></span>
+                    </label>
+                    <label for="alone">Alone</label>
+                  </div>
+  
+                  <div class="checkbox">
+                    <label for="sightseeing" class="checkbox-input">
+                      <input type="checkbox" name="sightseeing" id="sightseeing">
+                      <span class="fas fa-check tick"></span>
+                    </label>
+                    <label for="sightseeing">Sightseeing</label>
+                  </div>
+  
+                  <div class="checkbox">
+                    <label for="hiking" class="checkbox-input">
+                      <input type="checkbox" name="hiking" id="hiking">
+                      <span class="fas fa-check tick"></span>
+                    </label>
+                    <label for="hiking">Hiking</label>
+                  </div>
+                </div>
+  
+                <hr class="sidebar__hr">
+  
+                <h3 class="sidebar__title">Tags</h3>
+  
+                <div class="sidebar__checkboxes-grid">
+                  <div class="checkbox">
+                    <label for="desert" class="checkbox-input">
+                      <input type="checkbox" name="desert" id="desert">
+                      <span class="fas fa-check tick"></span>
+                    </label>
+                    <label for="desert">Desert</label>
+                  </div>
+  
+                  <div class="checkbox">
+                    <label for="asia" class="checkbox-input">
+                      <input type="checkbox" name="asia" id="asia">
+                      <span class="fas fa-check tick"></span>
+                    </label>
+                    <label for="asia">Asia</label>
+                  </div>
+  
+                  <div class="checkbox">
+                    <label for="europe" class="checkbox-input">
+                      <input type="checkbox" name="europe" id="europe">
+                      <span class="fas fa-check tick"></span>
+                    </label>
+                    <label for="europe">Europe</label>
+                  </div>
+  
+                  <div class="checkbox">
+                    <label for="ocean" class="checkbox-input">
+                      <input type="checkbox" name="ocean" id="ocean">
+                      <span class="fas fa-check tick"></span>
+                    </label>
+                    <label for="ocean">Ocean</label>
+                  </div>
+  
+                  <div class="checkbox">
+                    <label for="plane" class="checkbox-input">
+                      <input type="checkbox" name="plane" id="plane">
+                      <span class="fas fa-check tick"></span>
+                    </label>
+                    <label for="plane">Plane</label>
+                  </div>
+  
+                  <div class="checkbox">
+                    <label for="mountain" class="checkbox-input">
+                      <input type="checkbox" name="mountain" id="mountain">
+                      <span class="fas fa-check tick"></span>
+                    </label>
+                    <label for="mountain">Mountain</label>
+                  </div>
+                </div>
+  
+                <button class="button" type="submit">Show related posts</button>
+              </form>
+            </div>
+          </aside>
+        </section>
+      </div>
+    </main>
+  
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__row">
+          <ul class="footer__column footer__list">
+            <h3><a href="contacts.html" class="link-title">Contacts</a></h3>
+            <li><a href="#" class="link">Facebook</a></li>
+            <li><a href="#" class="link">Instagram</a></li>
+            <li><a href="#" class="link">Twitter</a></li>
+            <li><a href="#" class="link">Pinterest</a></li>
+            <li><a href="#" class="link">travel.kristy@mail.com</a></li>
+          </ul>
+  
+          <ul class="footer__column footer__list">
+            <h3><a href="#" class="link-title">Learn more</a></h3>
+            <li><a href="#" class="link">About me</a></li>
+            <li><a href="#" class="link">Privacy policy</a></li>
+            <li><a href="#" class="link">Contact with me</a></li>
+          </ul>
+  
+          <ul class="footer__column footer__list">
+            <h3><a href="#" class="link-title">Blog</a></h3>
+            <li><a href="#" class="link">Gear</a></li>
+            <li><a href="#" class="link">Guides</a></li>
+            <li><a href="#" class="link">Videos</a></li>
+            <li><a href="#" class="link">Destinations</a></li>
+          </ul>
+  
+          <ul class="footer-column social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </ul>
+  
+          <form action="#" method="post" class="footer__column footer__subscription">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+  
+            <button type="submit" class="action-button">Subscribe on updates</button>
+          </form>
+        </div>
+  
+        <div class="footer__copyright">Copyright © <a href="home.html">Travel Blog</a> 2020 - All Rights Reserved</div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+  <script>
+    var slideout = new Slideout({
+      'panel': document.getElementById('slideout-panel'),
+      'menu': document.getElementById('slideout-menu'),
+      'padding': 256,
+      'tolerance': 70
+    });
+  
+    document.querySelector('.header__menu-icon').addEventListener('click', function() {
+      slideout.toggle();
+    });
+  </script>
+  <script src="assets/js/search.js"></script>
+  <script src="assets/js/mobile-search.js"></script>
+  <script src="assets/js/mobile-dropmenu.js"></script>
+</body>
+</html>
